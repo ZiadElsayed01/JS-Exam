@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="dist/output.css" />
+    <link rel="stylesheet" href="src/css/input.css" />
+    <link rel="stylesheet" href="src/css/all.min.css" />
+    <!-- Logo & Title -->
+    <title>Yummy</title>
+    <link rel="icon" href="src/img/logo.png" />
+  </head>
+  <body class="bg-black">
+    <div
+      class="main-loading fixed inset-0 bg-black flex justify-center items-center z-50"
+      id="main-loading"
+    >
+      <div class="spinner"></div>
+    </div>
+
+    <div class="nav-menu 1/4 h-screen flex fixed z-30">
+      <div
+        class="nav-content flex flex-col justify-between text-white w-5/6 bg-black p-3"
+      >
+        <ul class="links p-4 overflow-hidden">
+          <li class="py-3 cursor-pointer relative" id="search">Search</li>
+          <li class="py-3 cursor-pointer relative" id="categories">
+            Categories
+          </li>
+          <li class="py-3 cursor-pointer relative" id="area">Area</li>
+          <li class="py-3 cursor-pointer relative" id="ingredient">
+            Ingredients
+          </li>
+          <li class="py-3 cursor-pointer relative" id="contact">Contact Us</li>
+        </ul>
+        <div class="nav-footer p-4">
+          <div class="social">
+            <i class="fa-brands fa-facebook mr-2 cursor-pointer"></i>
+            <i class="fa-brands fa-twitter mr-2 cursor-pointer"></i>
+            <i class="fa-solid fa-globe mr-2 cursor-pointer"></i>
+          </div>
+          <p>
+            Copyright A© 2019 All Rights <br />
+            Reserved.
+          </p>
+        </div>
+      </div>
+      <div
+        class="nav-head p-2 py-5 bg-white text-black flex flex-col justify-between items-center"
+      >
+        <a href="index.html">
+          <img class="max-w-12" src="src/img/logo.png" alt="logo" />
+        </a>
+        <i
+          class="fa-solid toggle-icon fa-align-justify fa-2x cursor-pointer"
+        ></i>
+        <div class="flex flex-col">
+          <i class="fa-solid fa-globe d-block mb-3 inline-block"></i>
+          <i class="fa-solid fa-share-nodes"></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="search-content text-white" id="search-content">
+      <div
+        class="search-container flex flex-wrap w-[88%] mx-auto pl-12"
+        id="search-container"
+      ></div>
+    </div>
+
+    <div class="content text-white min-h-screen relative">
+      <div
+        class="loading absolute inset-0 bg-black flex justify-center items-center"
+        id="loading"
+      >
+        <div class="spinner"></div>
+      </div>
+      <div
+        class="container flex flex-wrap mx-auto py-4 min-h-screen w-[88%] pl-12"
+        id="container"
+      ></div>
+    </div>
+    <script src="src/js/jquery-3.7.1.min.js"></script>
+    <script src="src/js/index.js"></script>
+  </body>
+</html>
